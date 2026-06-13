@@ -113,8 +113,11 @@ nav.scrolled .nav-car {
   opacity: 0;
 }
 
+/* mobile-only compact "Try Live" — !important because the generic .btn
+   rule below this sets display:inline-flex and would win the cascade;
+   mobile.css re-shows it under 700px with its own !important */
 .nav-mobile-btn {
-  display: none;
+  display: none !important;
 }
 
 
